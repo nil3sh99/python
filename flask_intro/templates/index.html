@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Tuts</title>
+</head>
+<body>
+    <h2>Tutorial 2</h2>
+    <p>
+        Hello World!
+    </p>
+    <p>
+        {{first_name}}
+    </p>
+    <h3> Printing names list </h3>
+    <p> names list =
+        [
+            {% for names in list_names %}
+            {% if names == "nilu" %}
+            <p> Nilesh is a great coder </p>
+            {% else %}
+                {{names}} 
+            {% endif %}
+            {% endfor %}
+        ]
+    </p>
+</body>
+</html>
