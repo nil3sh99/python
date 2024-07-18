@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- This is how we link the stylesheet, this is exact same thing we do for javascript file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    <!-- Jijna 2 synatx: creating a block for a template which can be inserted into other website components -->
+    <!-- block "xxx" this is a unique value that you define in your html code which can be called in your other template -->
+    {% block head %}{% endblock %}
+</head>
+<body>
+    {% block body %}{% endblock %}
+</body>
+</html>
