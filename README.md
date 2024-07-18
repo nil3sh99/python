@@ -41,3 +41,13 @@ with app.app_context():
         db.create_all()
 
 Basically, put this in your Flask app under the Db.Model classes. Make sure to indent properly and run your flask app one time. It should create the database (also check your instance folder for the db file). Then comment it out. You can run other SQL commands under the with statement if you need info on what's in your database file.
+
+## Running the application
+
+Clone the repository either by doing http or ssh clone.
+
+cd into the app1 directory where app.py file is present.
+
+Run python3 app.py to run the flask server.
+
+Application will be deployed on a development local server and port 5000.
