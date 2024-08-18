@@ -48,6 +48,30 @@ r4 = Robot("nilesh", "red", 40)
 r4.introduce_self()
 
 
+#########################################
+# Interacting with Different Classes
+#########################################
+class Person:
+    def __init__(self, n, p, i):
+        self.name = n
+        self.personality = p
+        self.is_sitting = i
+    
+    def sit_down(self): 
+        self.is_sitting = True
+    
+    def stand_up(self):
+        self.is_sitting = False
+
+
+p1 = Person("Nilesh", "Aggressive", False)
+p2 = Person("Becky", "Talkative", True)
+
+# p1 owns the r3
+p1.robot_owned = r3
+p2.robot_owned = r4
+
+p1.robot_owned.introduce_self()
 
 
         
